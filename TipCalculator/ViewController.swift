@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     
     @IBAction func onEditingChanged(sender: AnyObject) {
         var billAmount = NSString(string: billField.text!).doubleValue
-        let tipPercentages = [0.15, 0.18, 0.20]
+        let tipPercentages = [0.15, 0.20]
         let tipPercent = tipPercentages[tipControl.selectedSegmentIndex]
         
         if billAmount > 999 {
